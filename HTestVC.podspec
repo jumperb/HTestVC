@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                    DESC
   s.license      = "Copyright"
   s.homepage     = "https://github.com/jumperb/HTestVC"
-  s.author       = { "jumperb" => "jumperb@gmail.com" }
+  s.author       = { "jumperb" => "zhangchutian_05@163.com" }
   s.source       = { :git => "https://github.com/jumperb/HTestVC.git", :tag => s.version.to_s}
 
   s.source_files  = 'Class/*.{h,m}'
