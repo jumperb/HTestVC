@@ -25,3 +25,10 @@ typedef void (^HTestCallback)(id sender, id data);
  */
 - (void)addMenu:(NSString *)title subTitle:(NSString *)subTitle callback:(HTestCallback)callback;
 @end
+
+
+@interface BDebugMenuItem : NSObject
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *subTitle;
+@property (nonatomic, strong) HTestCallback callback;
+@end

@@ -7,13 +7,6 @@
 //
 
 #import "HTestVC.h"
-
-@interface BDebugMenuItem : NSObject
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *subTitle;
-@property (nonatomic, strong) HTestCallback callback;
-@end
-
 @implementation BDebugMenuItem
 @end
 
