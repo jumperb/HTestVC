@@ -23,15 +23,10 @@
 
 @implementation HTestVC
 
-
-- (instancetype)init
+- (NSMutableArray *)menuData
 {
-    self = [super init];
-    if (self) {
-        self.title = @"MENU";
-        _menuData = [NSMutableArray new];
-    }
-    return self;
+    if (!_menuData) _menuData = [NSMutableArray new];
+    return _menuData;
 }
 
 - (void)addMenu:(NSString *)title callback:(HTestCallback)callback
@@ -51,6 +46,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"MENU";
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     _tableView.delegate = self;
     _tableView.dataSource = self;
