@@ -12,16 +12,16 @@ typedef void (^HTestCallback)(id sender, id data);
 /**
  *  add demo item
  *
- *  @param title
- *  @param callback
+ *  @param title title
+ *  @param callback pressed callback
  */
 - (void)addMenu:(NSString *)title callback:(HTestCallback)callback;
 /**
  *  add demo item
  *
- *  @param title
- *  @param subTitle
- *  @param callback 
+ *  @param title title
+ *  @param subTitle subTitle
+ *  @param callback pressed callback
  */
 - (void)addMenu:(NSString *)title subTitle:(NSString *)subTitle callback:(HTestCallback)callback;
 @end
